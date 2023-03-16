@@ -18,7 +18,7 @@ class TextSpliter {
         this.splitArr.forEach(word => {
             let span = document.createElement('span');
             span.innerText = word;
-            span.style.transition = `${this.config.duration}ms`;
+            span.style.transition = `${this.config.duration}ms ease-in-out`;
             span.style.position = span.style.position || 'relative';
             for(let startStyle in this.config.start){
                 span.style[startStyle] = `${this.config.start[startStyle]}`;

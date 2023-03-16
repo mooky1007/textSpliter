@@ -11,18 +11,18 @@
     <h1 class="spliteText">Some Text</h1>
     <script>
         const textSpliter = new TextSpliter('.spliteText', {
-            stepDelay: 200, // 각 단어별 시작 시간
-            duration: 500, // 애니메이션 지속 시간
+            stepDelay: 80, // 각 단어별 시작 시간
+            duration: 200, // 애니메이션 지속 시간
             delay: 500, // 시작 시간
             start: {
                 top: '20px',
                 opacity: 0,
-                color: 'red'
+                transform: 'scale(0.5)',
             },
             end : {
                 top: 0,
                 opacity: 1,
-                color: 'blue'
+                transform: 'scale(1)',
             },
             callback: () => {
                 console.log('[종료] 애니메이션이 종료되었습니다.');
