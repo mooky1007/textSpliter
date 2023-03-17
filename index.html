@@ -32,12 +32,23 @@
     <div class="box">
         <h1 class="text-class03">Test Text 03</h1>
         <p class="config">
-            stepDelay: 30,<br />
-            duration: 400,<br />
+            stepDelay: 0,<br />
+            duration: 500,<br />
             start: { transform: 'rotate(45deg) scale(6)', bottom: '10px', opacity: 0 },<br />
             end : { transform: 'rotate(0deg) scale(1)', bottom: 0, opacity: 1 }
         </p>
         <button type="button" onclick="textSpliter03.start();">PLAY</button>
+    </div>
+
+    <div class="box">
+        <h1 class="text-class04">Test Text 04</h1>
+        <p class="config">
+            stepDelay: 200,<br />
+            duration: 100,<br />
+            start: { color: 'red', left: '30px', bottom: '10px', opacity: 0 },<br />
+            end : {  left: 0, bottom: 0, opacity: 1 }
+        </p>
+        <button type="button" onclick="textSpliter04.start();">PLAY</button>
     </div>
 
     <script>
@@ -68,8 +79,8 @@
         textSpliter02.start();
         
         const textSpliter03 = new TextSpliter('.text-class03', {
-            stepDelay: 30,
-            duration: 400,
+            stepDelay: 0,
+            duration: 500,
             start: {
                 transform: 'rotate(45deg) scale(6)',
                 bottom: '10px',
@@ -82,6 +93,24 @@
             },
         });
         textSpliter03.start();
+
+        const textSpliter04 = new TextSpliter('.text-class04', {
+            stepDelay: 150,
+            duration: 100,
+            start: {
+                color: 'red',
+                left: '30px',
+                bottom: '10px',
+                opacity: 0,
+            },
+            end : {
+                color: 'inherit',
+                left: 0,
+                bottom: 0,
+                opacity: 1,
+            },
+        });
+        textSpliter04.start();
     </script>
 </body>
 </html>
