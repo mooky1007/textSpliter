@@ -21,7 +21,7 @@
 <br />
   
 3. 해당 dom 하단 혹은 `<body>` 최하단에 `<script>`를 생성해 초기화 후,
-`start()` 메서드를 이용해 실행합니다.
+`start()` 명령어로 실행합니다.
 ```html
     <script>
         const textSpliter = new TextSpliter('.input-your-className', {
