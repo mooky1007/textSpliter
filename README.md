@@ -9,11 +9,17 @@
 ```html
  <script src="https://mooky1007.github.io/textSpliter/textSpliter.js"></script>
 ```  
+
+<br />
+  
 2. 사용할 DOM에 클래스를 입력해줍니다.  
 이때 해당 클래스에는 따로 css를 사용하지 않는걸 권장합니다.  
 ```html  
  <h1 class="input-your-className">test text please</h1>
 ```  
+  
+<br />
+  
 3. 해당 dom 하단 혹은 `<body>` 최하단에 `<script>`를 생성해 초기화 후,
 `start()` 메서드를 이용해 실행합니다.
 ```html
