@@ -3,6 +3,8 @@
 텍스트 분할 애니메이션 라이브러리  
 선택된 DOM의 텍스트를 `<span>`로 분할 후 설정한 animation을 적용합니다.  
 
+[데모페이지](https://mooky1007.github.io/textSpliter/)
+
 ## Usage  
 
 1. `<head>` 내에 js 파일을 위치시켜 라이브러리를 불러옵니다.  
@@ -37,4 +39,3 @@
         textSpliter.start();
     </script>
 ```
-[데모페이지](https://mooky1007.github.io/textSpliter/)
