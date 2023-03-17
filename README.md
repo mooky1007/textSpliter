@@ -3,7 +3,7 @@
 텍스트 분할 애니메이션 라이브러리  
 선택된 DOM의 텍스트를 `<span>`로 분할 후 설정한 animation을 적용합니다.  
 
-[데모페이지](https://mooky1007.github.io/textSpliter/)
+[데모 페이지](https://mooky1007.github.io/textSpliter/)
 
 ## Usage  
 
