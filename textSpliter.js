@@ -43,7 +43,7 @@ class TextSpliter {
             span.style.position = span.style.position || 'relative';
             span.style.display = `inline-block`;
             if(span.innerText === ' '){
-                span.style.width = '1ch';
+                span.innerText = `&nbsp;`
             }
             for(let startStyle in this.config.start){
                 span.style[startStyle] = `${this.config.start[startStyle]}`;
