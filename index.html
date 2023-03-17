@@ -5,12 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://mooky1007.github.io/textSpliter/textSpliter.js?v=1.0.0.4"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://mooky1007.github.io/textSpliter/textSpliter.js?v=1.0.0.6"></script>
 </head>
 <body>
+    <div class="box">
+        <h1 class="text-class">Test Text 01</h1>
+        <p class="config">
+            start: { bottom: '10px', opacity: 0 },<br />
+            end : { bottom: 0, opacity: 1 }
+        </p>
+        <button type="button" onclick="textSpliter.start();">PLAY</button>
+    </div>
 
-    <h1 class="text-class">test text please</h1>
-    <button type="button" onclick="textSpliter.start();">test</button>
+    <div class="box">
+        <h1 class="text-class02">Test Text 02</h1>
+        <p class="config">
+            stepDelay: 30,<br />
+            duration: 400,<br />
+            start: { bottom: '10px', opacity: 0 },<br />
+            end : { bottom: 0, opacity: 1 }
+        </p>
+        <button type="button" onclick="textSpliter02.start();">PLAY</button>
+    </div>
+
+    <div class="box">
+        <h1 class="text-class03">Test Text 03</h1>
+        <p class="config">
+            stepDelay: 30,<br />
+            duration: 400,<br />
+            start: { transform: 'rotate(45deg) scale(6)', bottom: '10px', opacity: 0 },<br />
+            end : { transform: 'rotate(0deg) scale(1)', bottom: 0, opacity: 1 }
+        </p>
+        <button type="button" onclick="textSpliter03.start();">PLAY</button>
+    </div>
 
     <script>
         const textSpliter = new TextSpliter('.text-class', {
@@ -24,6 +52,36 @@
             },
         });
         textSpliter.start();
+
+        const textSpliter02 = new TextSpliter('.text-class02', {
+            stepDelay: 30,
+            duration: 400,
+            start: {
+                bottom: '10px',
+                opacity: 0,
+            },
+            end : {
+                bottom: 0,
+                opacity: 1,
+            },
+        });
+        textSpliter02.start();
+        
+        const textSpliter03 = new TextSpliter('.text-class03', {
+            stepDelay: 30,
+            duration: 400,
+            start: {
+                transform: 'rotate(45deg) scale(6)',
+                bottom: '10px',
+                opacity: 0,
+            },
+            end : {
+                transform: 'rotate(0deg) scale(1)',
+                bottom: 0,
+                opacity: 1,
+            },
+        });
+        textSpliter03.start();
     </script>
 </body>
 </html>
