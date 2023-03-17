@@ -18,7 +18,7 @@
 `start()` 메서드를 이용해 실행합니다.
 ```html
     <script>
-        const textSpliter = new TextSpliter('.text-class', {
+        const textSpliter = new TextSpliter('.input-your-className', {
             start: {
                 bottom: '10px',
                 opacity: 0,
@@ -31,3 +31,4 @@
         textSpliter.start();
     </script>
 ```
+[데모페이지](https://mooky1007.github.io/textSpliter/)
