@@ -9,28 +9,20 @@
 </head>
 <body>
 
-    <h1 class="spliteText">Some Text</h1>
+    <h1 class="text-class">test text please</h1>
+    <button type="button" onclick="textSpliter.start();">test</button>
 
     <script>
-        const textSpliter = new TextSpliter('.spliteText', {
-            stepDelay: 80, // 각 단어별 시작 시간
-            duration: 200, // 애니메이션 지속 시간
-            delay: 500, // 시작 시간
-            start: { // 초기값
-                top: '20px',
+        const textSpliter = new TextSpliter('.text-class', {
+            start: {
+                bottom: '10px',
                 opacity: 0,
-                transform: 'scale(0.5)',
             },
-            end : { // 종료값
-                top: 0,
+            end : {
+                bottom: 0,
                 opacity: 1,
-                transform: 'scale(1)',
             },
-            callback: () => { // 애니메이션 종료 후 실행 콜백
-                console.log('[종료] 애니메이션이 종료되었습니다.');
-            }
         });
-
         textSpliter.start();
     </script>
 </body>
